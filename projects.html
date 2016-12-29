@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+     <title>Jade - Projects</title>
+     <!--CSS-->
+     <link rel="stylesheet" href="css/styles.css" >
+     <!--Specific css for projects page-->
+     <link rel="stylesheet" href="css/styles-project.css" >
+     <!--RWD script-->
+     <script src="scripts/mobile.js"></script>
+     <!--Google Font-->
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navigation -->
+	<div class="head">
+		<!--<img src="images/logo.jpg" class="logo2">-->
+		<ul class="navbar" id="navbar">
+			<li class="nav"><a href="">Dashboard</a></li>
+  			<li class="nav"><a href="" class="active">Projects</a></li>
+ 			<li class="nav"><a href="">Employees</a></li>
+ 			<li class="nav"><a href="">Settings</a></li>
+ 			<!--<li class="nav"><input type="button" class="submit submit2" type= "submit" value="Log out" href=""></li>-->
+ 			<li style="float:right" class="nav"><a class="active" href="#about">Log out</a></li>
+ 			<li class="icon">
+    			<a href="javascript:void(0);" onclick="myFunction()" style="font-size:15px;">&#9776;</a>
+  			</li>
+		</ul>
+	</div>
+	<div class="searchbar">
+		<form action="blah.php" method="GET/POST" id="form"> <!--Link PHP stuff here-->
+  			<input type="text" name="search" placeholder="Search projects">
+		</form>
+		<button type="submit" form="form" value="search" class="submit3">Search</button>
+		<button type="submit" value="add" class="submit3" href="#add">+ Add project</button>
+	</div>
+  <div>
+    <table class="table">
+      <tr>
+        <th>Project Name</th>
+        <th>Create Date</th> 
+        <th>Details</th>
+        <!--Populate table through scripts here-->
+      </tr>
+    </table>
+  </div>
+	
+	
+
+</html>

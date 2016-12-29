@@ -12,6 +12,30 @@
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:     black;
 }
+@media screen and (max-width:680px) {
+  ul.navbar li:not(:first-child) {display: none;}
+  ul.navbar li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+@media screen and (max-width:680px) {
+  ul.navbar.responsive {position: relative;}
+  ul.navbar.responsive li.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  ul.navbar.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.navbar.responsive li a {
+    display: block;
+    text-align: left;
+  }
+}
+
 .login {
 	height: 425px;
     width: 400px;
@@ -34,6 +58,13 @@
  	border: 2px;
     border-radius: 10px;
 
+}
+.logo2{
+	height: 50px;
+    width: 15%;
+    display: inline;
+    float: left;
+    
 }
 .input{
 	margin-top: 5%;
@@ -62,15 +93,66 @@
     transition-duration: 0.4s;
     font-size: 120%;
 }
+.submit2{
+	width:50%;
+	height: 15%;
+	margin-left: 250px;
+	margin-top: 0;
+}
 .submit:hover {
     background-color: #4CAF50; /* Green */
     color: white;
 }
+.head{
+	margin: 0;
+    padding: 0;
+	
+}
+.navbar{
+    list-style-type: none;
+  	margin: 0;
+  	padding: 0;
+  	overflow: hidden;
+  	background-color: #f1f1f1;
+
+}
+.nav{
+	float: left;
+	
+	/*padding-left: 10%;*/
+}
+.nav a{
+	display: inline-block;
+  	color: black;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	transition: 0.3s;
+  	font-size: 17px;
+  	border-right: 2px solid #bbb;
+}
+.nav a:last-child{
+	border-right:  2px solid #bbb;
+}
+
+.nav a:hover{
+	background-color: #00851f;
+    color: white;
+}
+.nav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+.icon{
+	display: none;
+}
+
 input[type=text]:focus {
 	-webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     border: 2px solid #555;
 }
+
 body{
 	background-color: silver;
 	font-family: 'Roboto', sans-serif;
