@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+     <title>Jade - Projects</title>
+     <!--CSS-->
+     <link rel="stylesheet" href="css/styles.css" >
+     <!--Specific css for projects page-->
+     <link rel="stylesheet" href="css/styles-projectview.css" > 
+     <!--RWD script-->
+     <script src="scripts/mobile.js"></script>
+     <!--Google Font-->
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navigation -->
+	<div class="head">
+		<!--<img src="images/logo.jpg" class="logo2">-->
+		<ul class="navbar" id="navbar">
+			<li class="nav"><a href="">Dashboard</a></li>
+  			<li class="nav"><a href="projects.html" class="active">Projects</a></li>
+ 			<li class="nav"><a href="">Employees</a></li>
+ 			<li class="nav"><a href="">Settings</a></li>
+ 			<!--<li class="nav"><input type="button" class="submit submit2" type= "submit" value="Log out" href=""></li>-->
+ 			<li style="float:right" class="nav"><a class="active" href="#about">Log out</a></li>
+ 			<li class="icon">
+    			<a href="javascript:void(0);" onclick="myFunction()" style="font-size:15px;">&#9776;</a>
+  			</li>
+		</ul>
+	</div>
+	<button class="back submit3" onclick="goBack()">Go Back</button>
+<!--End of navigation-->
+	<div class="projectname">
+		<h1>Project name</h1>
+	</div>
+	<div class="team">
+		<h1>Team</h1>
+	</div>
+<!--Start of projects details table-->
+	<div class="tdiv">
+	<table class="table">
+	<col style="width:40%">
+      <tr>
+      <!--Populate table through scripts here-->
+      <!--Fill in between the TD tags!-->
+      	<th class="">Project type</th>
+      	<td>Type</td>     
+      </tr>
+      <tr>
+      	<th class="">Start date</th>
+      	<td>2017-1-1</td>
+      </tr>
+      <tr>
+      	<th class="">End date</th>
+      	<td>2017-1-1</td>
+      </tr>
+      <tr>
+      	<th class="">Primary location</th>
+      	<td>Dubai</td>
+      </tr>
+      <tr>
+      	<th class="">Required skills</th>
+      	<td><a href="" class="skills">Skills1</a><a href="" class="skills">Skills2</a></td>
+      </tr>
+   	 </table>
+	</div>
+<!--End of project details-->
+
+<!--Start of team table-->
+	<div class="teamdiv">
+	<table class="table">
+	<col style="width:20%">
+	<col style="width:60%">
+      <tr>
+      <!--Populate table through scripts here-->
+      
+      	<th class="">ID</th> 
+      	<th class="">Name</th>   
+      	<th class="">Details</th>     
+     </tr>
+     <!--Create new TR for each entry-->
+     <tr>
+     	<td>1</td>
+     	<td>Name here</td>
+     	<td><a href="">View</a></td>
+     </tr>
+     <tr>
+     	<td>2</td>
+     	<td>Name here</td>
+     	<td><a href="">View</a></td>
+     </tr>
+   	 </table>
+	</div>
+<!--End of team table-->
+<div class="desc">
+	<table>
+	<col style="width:20%">
+		<tr>
+			<th>Project description</th>
+			<td class="textdesc">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</td>
+		</tr>
+		
+	</table>
+</div>
+</body>
+</html>

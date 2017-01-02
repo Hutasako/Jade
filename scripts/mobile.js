@@ -6,3 +6,6 @@ function myFunction() {
         x.className = "navbar";
     }
 }
+function goBack() {
+    window.history.back();
+}
