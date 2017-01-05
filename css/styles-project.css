@@ -1,4 +1,4 @@
-.searchbox {
+input[type=search] {
     width: 63.5%;
     box-sizing: border-box;
     border: 2px solid #ccc;
