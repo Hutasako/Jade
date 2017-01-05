@@ -113,7 +113,7 @@
   	margin: 0;
   	padding: 0;
   	overflow: hidden;
-  	background-color: #aaaaaa;
+  	background-color: #f1f1f1;
 
 }
 .nav{
@@ -154,6 +154,6 @@ input[type=text]:focus {
 }
 
 body{
-	background-color: #e8ebef;
+	background-color: silver;
 	font-family: 'Roboto', sans-serif;
 }
