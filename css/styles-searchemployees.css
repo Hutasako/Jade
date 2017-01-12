@@ -1,0 +1,12 @@
+.projectheader{    
+    display: inline;
+    margin-left: 5%;
+    color: #00851f;
+}
+.name{
+    display: inline;
+    margin-left: 1%;
+}
+.searchbar{
+	margin-bottom: 2%;
+}
