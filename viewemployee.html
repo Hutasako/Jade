@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+     <title>Jade - View Employee</title>
+     <!--CSS-->
+     <link rel="stylesheet" href="css/styles.css" >
+     <!--Specific css for projects page-->
+     <link rel="stylesheet" href="css/styles-viewemployee.css" >
+     <!--RWD script-->
+     <script src="scripts/mobile.js"></script>
+     <!--Stuff for fancy skill select-->
+     <link rel="stylesheet" type="text/css" href="css/chosen.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+     <script type="text/javascript" src="scripts/chosen.jquery.js"></script>
+     <script type="text/javascript" src="scripts/chosen.jquery.min.js"></script>
+     <!--Google Font-->
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+     <!-- Navigation -->
+     <div class="head">
+          <img src="images/jade.png" class="logo2">
+          <ul class="navbar" id="navbar">
+               <li class="nav"><a href="">Dashboard</a></li>
+               <li class="nav"><a href="projects.html" class="active">Projects</a></li>
+               <li class="nav"><a href="searchemployees.html">Employees</a></li>
+               <li class="nav"><a href="">Settings</a></li>
+               <!--<li class="nav"><input type="button" class="submit submit2" type= "submit" value="Log out" href=""></li>-->
+               <li style="float:right" class="nav"><a class="active" href="#about">Log out</a></li>
+               <!--navbar icon through html-->
+            <div class="icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+          </ul>
+     </div>
+    <!--End of navigation-->
+    <div class="profile">
+          <a type="button" value="add" class="submit3" href="addproject2.html">< Go Back to Employees</a><br>
+          <img src="images/profileplaceholder.png" class="profile-picture">
+          <h1 class="profile-header">Profile details</h1>
+          <div class="details">
+               <table class="info">
+                    <tr>
+                         <th>Name: </th>
+                         <td>Ali Muzaffar</td>
+                    </tr>
+                    <tr>
+                        <th>Sex:</th>
+                        <td>Male</td>
+                    </tr>
+                    <tr>
+                         <th>Position: </th>
+                         <td>Employee</td>
+                    </tr>
+                    <tr>
+                         <th>Location: </th>
+                         <td>Home</td>
+                    </tr>
+                    <tr>
+                         <th>Skills: </th>
+                         <td>Skill1 | Skill2</td>
+                    </tr>
+                    <tr>
+                        <th>Availablity:</th>
+                        <td>Available</td>
+                    </tr>
+               </table>
+          </div>
+          <div class="contact">
+            <h4>Contact details</h4>
+            <h4>Email: </h4>
+            <h4>Number: </h4>
+          </div>
+    </div>
+
+</body>
+</html>

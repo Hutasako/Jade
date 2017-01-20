@@ -2,12 +2,11 @@
 
 <html lang="en">
 <head>
-     <title>Jade - Employees</title>
+     <title>Jade - Projects</title>
      <!--CSS-->
      <link rel="stylesheet" href="css/styles.css" >
      <!--Specific css for projects page-->
      <link rel="stylesheet" href="css/styles-project.css" >
-     <link rel="stylesheet" type="text/css" href="css/styles-searchemployees.css">
      <!--RWD script-->
      <script src="scripts/mobile.js"></script>
      <!--Google Font-->
@@ -15,48 +14,48 @@
 
 </head>
 <body>
+<!-- Navigation -->
 	<div class="head">
 		<img src="images/jade.png" class="logo2">
 		<ul class="navbar" id="navbar">
 			<li class="nav"><a href="">Dashboard</a></li>
-  			<li class="nav"><a href="projects.html" >Projects</a></li>
- 			<li class="nav"><a href="searchemployees.html" class="active">Employees</a></li>
+  			<li class="nav"><a href="projects.html" class="active">Projects</a></li>
+ 			<li class="nav"><a href="searchemployees.html">Employees</a></li>
  			<li class="nav"><a href="">Settings</a></li>
  			<!--<li class="nav"><input type="button" class="submit submit2" type= "submit" value="Log out" href=""></li>-->
  			<li style="float:right" class="nav"><a class="active" href="#about">Log out</a></li>
- 			<!--navbar icon through html-->
-      <div class="icon" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
+ 			<div class="icon" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
       </div>
 		</ul>
 	</div>
+<!--End of navigation-->
 	<div class="searchbar">
 		<form action="blah.php" method="GET/POST" id="form"> <!--Link PHP stuff here-->
-  			<input type="search" name="search" class="searchbox" placeholder="Search suggested candidates">       
+  			<input type="search" name="search" class="searchbox" placeholder="Search projects">       
 		</form>
     <button type="submit" form="form" value="search" class="submit3">Search</button>
-    <a type="button" value="add" class="submit3" href="addproject2.html">+ Add project</a>	
+    <a type="button" value="add" class="submit3" href="addproject.html">+ Add project</a>
+		
 	</div>
-	<div>
-	<h2 class="projectheader">Project name:</h2><h2 class="name">Project</h2>
+  <div>
     <table class="table">
       <tr>
-        <th>Suggested candidate</th>
-        <th>Status</th> 
+        <th>Project Name</th>
+        <th>Create Date</th> 
         <th>Details</th>
-        <th>Invitation</th>
         <!--Populate table through scripts here-->
       </tr>
       <tr>
-        <td>Bob</td>
-        <td>Pending</td>
-        <td><a href="viewemployee.html">View</a></td>
-        <td><a href="viewemployee.html">Invite</a></td>
+        <td>Project Name</td>
+        <td>1-1-2017</td>
+        <td><a href="viewproject.html">View</a></td>
       </tr>
     </table>
   </div>
+	
+	
 
-</body>
 </html>

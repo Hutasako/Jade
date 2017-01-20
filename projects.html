@@ -16,7 +16,7 @@
 <body>
 <!-- Navigation -->
 	<div class="head">
-		<!--<img src="images/logo.jpg" class="logo2">-->
+		<img src="images/jade.png" class="logo2">
 		<ul class="navbar" id="navbar">
 			<li class="nav"><a href="">Dashboard</a></li>
   			<li class="nav"><a href="projects.html" class="active">Projects</a></li>
@@ -24,9 +24,12 @@
  			<li class="nav"><a href="">Settings</a></li>
  			<!--<li class="nav"><input type="button" class="submit submit2" type= "submit" value="Log out" href=""></li>-->
  			<li style="float:right" class="nav"><a class="active" href="#about">Log out</a></li>
- 			<li class="icon">
-    			<a href="javascript:void(0);" onclick="myFunction()" style="font-size:15px;">&#9776;</a>
-  			</li>
+      <!--navbar icon through html-->
+ 			<div class="icon" onclick="myFunction(this)">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+      </div>
 		</ul>
 	</div>
 <!--End of navigation-->
@@ -35,11 +38,11 @@
   			<input type="search" name="search" class="searchbox" placeholder="Search projects">       
 		</form>
     <button type="submit" form="form" value="search" class="submit3">Search</button>
-    <a type="button" value="add" class="submit3" href="addproject.html">+ Add project</a>
+    <a type="button" value="add" class="submit3" href="addproject2.html">+ Add project</a>
 		
 	</div>
   <div>
-    <table class="table">
+    <table class="table" width="400">
       <tr>
         <th>Project Name</th>
         <th>Create Date</th> 

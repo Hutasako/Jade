@@ -25,12 +25,13 @@ input[type=search] {
     background-color: #00851f;
     border: 2px;
     border-radius: 10px;
-    font-size: 110%;
+    font-size: 100%;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
     padding: 12px 15px;
     color: white;
     font-family: 'Roboto', sans-serif;
+    cursor: pointer;
 }
 .add{
     float: right;

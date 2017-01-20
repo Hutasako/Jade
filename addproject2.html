@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+     <title>Jade - Projects</title>
+     <!--CSS-->
+     <link rel="stylesheet" href="css/styles.css" >
+     <!--Specific css for projects page-->
+     <link rel="stylesheet" href="css/styles-addproject.css" > 
+     <!--RWD script-->
+     <script src="scripts/mobile.js"></script>
+     <!--Stuff for fancy skill select-->
+     <link rel="stylesheet" type="text/css" href="css/chosen.css" />
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js" type="text/javascript"></script>
+     <script type="text/javascript" src="scripts/chosen.jquery.js"></script>
+     <script type="text/javascript" src="scripts/chosen.jquery.min.js"></script>
+     <!--Google Font-->
+     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+</head>
+<body>
+<!-- Navigation -->
+	<div class="head">
+		<img src="images/jade.png" class="logo2">
+		<ul class="navbar" id="navbar">
+			<li class="nav"><a href="">Dashboard</a></li>
+  			<li class="nav"><a href="projects.html" class="active">Projects</a></li>
+ 			<li class="nav"><a href="searchemployees.html">Employees</a></li>
+ 			<li class="nav"><a href="">Settings</a></li>
+ 			<!--<li class="nav"><input type="button" class="submit submit2" type= "submit" value="Log out" href=""></li>-->
+ 			<li style="float:right" class="nav"><a class="active" href="#about">Log out</a></li>
+ 			<!--navbar icon through html-->
+            <div class="icon" onclick="myFunction(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+		</ul>
+	</div>
+    <!--End of navigation-->
+    <div class="container">
+    <!--Call PHP here-->
+    <form action="action_page.php" name="form">
+    <fieldset>
+    <legend><h1>Add project</h1></legend>
+        <div class="projectinput">
+            <div>
+                <label for="pname">Project Name:</label>
+                <input type="text" name="pname" class="pname" id="pname" placeholder="Project name" required><br>
+            </div>
+
+            <div>
+                <label for="ptype">Project type:</label>
+                <select class="ptype" name="ptype" id="ptype" required>
+                    <option value ="" disabled selected>Select project type</option>
+                    <option value="type1">PType1</option>
+                    <option value="type2">PType2</option>
+                    <option value="type3">PType3</option>
+                    <option value="type4">PType4</option>
+                </select>
+            </div>
+
+            <br>
+
+            <div>
+                <label for="sdate">Start date:</label>
+                <input type="date" id="sdate" name="sdate" class="" required>
+                <label for="edate" class="edate-label">End date:</label>
+                <input type="date" id="edate" name="edate" class="" required>
+            </div><br>
+            <div>
+                <label for="loc">Location:</label>
+                <select name="loc" id="loc" class="ptype ptype2" placeholder="Select location" required>
+                    <option disabled selected value="">Select location</option>
+                    <option value="UAE">United Arab Emirates</option>
+                    <option value="IND">India</option>
+                    <option value="PAK">Pakistan</option>
+                    <option value="PHL">Philippines</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="skill" style="margin-right: 5.5%;">Select required skills:</label>
+                <select data-placeholder=" Select your skill(s)" id="skill" name="skill" class="skills chosen-select-width"  multiple required>            
+                    <option value="skill1">Skill1</option>
+                    <option value="skill2">Skill2</option>
+                    <option value="skill2">Skill3</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="desc">Project description:</label>
+                <textarea id="desc" name="desc" required></textarea>
+            </div>
+        </div>
+        <!--
+        Reference for the JQuery
+        https://harvesthq.github.io/chosen/
+
+        Inititate the script for skill select
+         -->
+        <script type="text/javascript">
+            $(document).ready(function () {
+             $(".skills").chosen();
+            });
+        </script>
+        <button class="submit">Submit</button>
+    </fieldset>
+    </form>
+    </div>
+</body>
+</html>
